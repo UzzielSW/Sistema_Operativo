@@ -1,6 +1,6 @@
 # Simulador de Estados de Procesos
 
-Este proyecto implementa un simulador de estados de procesos en un sistema operativo, demostrando el ciclo de vida de los procesos y sus transiciones entre diferentes estados.
+Este laboratorio implementa un simulador de estados de procesos en un sistema operativo, demostrando el ciclo de vida de los procesos y sus transiciones entre diferentes estados.
 
 ## Características
 
@@ -48,9 +48,9 @@ simulador_procesos/
 ├── planificador.py     # Lógica de scheduling
 ├── simulador.py        # Motor de simulación
 ├── interfaz.py         # Visualización en consola
-├── main.py            # Punto de entrada
+├── main.py             # Punto de entrada
 ├── requirements.txt    # Dependencias
-└── README.md          # Documentación
+└── README.md           # Documentación
 ```
 
 ## Estados de Procesos
@@ -69,7 +69,7 @@ El simulador proporciona las siguientes métricas:
 
 - Tiempo de espera promedio
 - Tiempo de respuesta promedio
-- Throughput
+- Throughput: cantidad de procesos que se completan exitosamente por unidad de tiempo
 
 ## Diagrama de Estados
 
@@ -88,11 +88,8 @@ stateDiagram-v2
     ESPERANDO_SUSPENDIDO --> ESPERANDO: Reanudación
     TERMINADO --> [*]
 
-    # note right of NUEVO: Proceso recién creado
-    # note right of LISTO: Esperando CPU
-    # note right of EJECUTANDO: Usando CPU
-    # note right of ESPERANDO: Esperando I/O
-    # note right of TERMINADO: Proceso finalizado
-    # note right of LISTO_SUSPENDIDO: En memoria secundaria
-    # note right of ESPERANDO_SUSPENDIDO: En memoria secundaria
+     note right of LISTO: Esperando CPU
+     note right of EJECUTANDO: Usando CPU
+     note right of LISTO_SUSPENDIDO: En memoria secundaria
+     note right of ESPERANDO_SUSPENDIDO: En memoria secundaria
 ```

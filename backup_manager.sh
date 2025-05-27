@@ -1,7 +1,15 @@
 #!/bin/bash
 
-# Gestor de Copias de Seguridad Selectivas - Bash para Ubuntu
+# Gestor de Copias de Seguridad Selectivas
+: '
+Este es un script que permite al usuario especificar un directorio de origen, un directorio de destino y un patrón de nombres de archivo (**.txt, documento_final.**).
 
+El script buscaría archivos que coincidan con el patrón en el origen y sus subdirectorios (hasta cierta profundidad, configurable por parámetro), los comprimiría (en un archivo .zip o .tar.gz con fecha y hora) y los movería al directorio de destino. Registraría cada archivo procesado, el tamaño original, el tamaño comprimido y cualquier error en un archivo de log. Se podrían incluir validaciones para asegurar que los directorios existen y hay suficiente espacio en el destino.
+- **Parámetros**: Directorio origen, directorio destino, patrón de archivo, profundidad de búsqueda (opcional).
+- **E/S Archivos**: Leer estructura de directorios, leer archivos para comprimir, escribir archivo comprimido, escribir archivo de log.
+- **Condicionales/Bucles**: Iterar sobre archivos/directorios, verificar si el archivo coincide con el patrón, verificar existencia de directorios.
+- **Salida Personalizada**: Mensajes de progreso, resumen en el log, advertencias si no se encuentran archivos o si hay errores de compresión/copia.
+'
 # --- Configuración de Salida y Log ---
 LOG_FILE="backup_manager_ubuntu.log"
 exec > >(tee -a "${LOG_FILE}") 2>&1 # Redirige stdout y stderr al log y a la consola
