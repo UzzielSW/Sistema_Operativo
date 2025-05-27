@@ -1,0 +1,6 @@
+1. ¿Qué diferencias encontró en la estructura general entre los scripts de Windows y los de Ubuntu?
+2. ¿Qué ventajas y desventajas tiene el scripting en cada uno de estos entornos?
+3. ¿Cómo manejan ambos sistemas los errores durante la ejecución de scripts?
+4. ¿Cuál fue el comando o lógica más desafiante de implementar y por qué?
+5. Si su script necesitara escalarse para múltiples usuarios, ¿qué aspectos debería considerar?
+6. ¿Qué mejoras podría implementar a futuro en sus scripts para hacerlos más portables o robustos?

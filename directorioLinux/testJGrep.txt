@@ -1,0 +1,11 @@
+Este texto contiene varios elementos que son útiles para practicar regex, como:
+ESTE TEXTO CONTIENE VARIOS ELEMENTOS QUE SON ÚTILES PARA PRACTICAR REGEX, COMO:
+
+Fechas: 27 de abril de 2025
+Números: 15, 22, 18, 30, 507, 6123-4567, 52, 55, 9876, 5432
+Nombres propios: Ana Pérez, Carlos López, SecureVision, Universidad Tecnológica de Panamá, Universidad Latina de Panamá
+Títulos: Dra., Ing., CEO
+Direcciones de correo electrónico: [dirección de correo electrónico eliminada], [dirección de correo electrónico eliminada], [dirección de correo electrónico eliminada]
+URLs: www.techpanama.com
+Números de teléfono: +507 6123-4567, +52 55 9876 5432
+Nombres de países: Estados Unidos, Canadá, Brasil, Argentina, Panamá
